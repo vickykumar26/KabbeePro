@@ -1,0 +1,61 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.KotlinWithGaurav" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/primary_color</item>
+        <item name="colorPrimaryVariant">@color/white</item>
+        <item name="colorOnPrimary">@color/black</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/primary_color</item>
+        <item name="colorSecondaryVariant">@color/primary_color</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+        <item name="textInputStyle">@style/InputEditText</item>
+        <!--        <item name="android:windowIsTranslucent">true</item>-->
+        <!--        <item name="android:windowBackground">@color/blue_600</item>-->
+        <item name="android:buttonStyle">@style/BlueButtonStyle</item>
+        <item name="materialSwitchStyle">@style/Widget.App.Switch</item>
+        <item name="android:windowAnimationStyle">@style/CustomAnimation</item>
+    </style>
+
+    <style name="CustomAnimation">
+        <item name="android:activityOpenEnterAnimation">@anim/slide_in_right</item>
+        <item name="android:activityOpenExitAnimation">@anim/slide_out_left</item>
+    </style>
+
+    <style name="BlueButtonStyle" parent="android:style/Widget.Button">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:fontFamily">@font/poppins_medium</item>
+        <!--        <item name="android:background">@drawable/img_btn_blue_bg</item>-->
+        <item name="android:textAllCaps">false</item>
+        <item name="android:paddingStart">@dimen/_10sdp</item>
+        <item name="android:paddingEnd">@dimen/_10sdp</item>
+    </style>
+
+    <style name="InputEditText" parent="Widget.Design.TextInputLayout">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">#000000</item>
+        <item name="boxBackgroundColor">@color/white</item>
+        <item name="hintTextColor">#969696</item>
+        <item name="colorControlNormal">#c5c5c5</item>
+        <item name="android:fontFamily">@font/poppins_medium</item>
+        <item name="colorControlActivated">@color/primary_color</item>
+        <item name="colorControlHighlight">@color/primary_color</item>
+    </style>
+
+
+    <style name="Widget.App.Switch" parent="Widget.Material3.CompoundButton.MaterialSwitch">
+        <item name="materialThemeOverlay">@style/ThemeOverlay.App.Switch</item>
+    </style>
+
+    <style name="ThemeOverlay.App.Switch" parent="">
+        <item name="colorPrimary">#FFFFFF</item>
+        <item name="colorSurfaceVariant">#FFFFFF</item>
+        <item name="colorOutline">#AEAEAE</item>
+        <item name="colorOnPrimary">#32A969</item>
+    </style>
+
+</resources>
